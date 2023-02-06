@@ -5,6 +5,7 @@ import (
 	"os"
 )
 
+// Crido a strutc do arquivo Json
 type Menu struct {
 	Entradas   []string `json:"entradas"`
 	Principais []string `json:"principais"`
@@ -17,7 +18,7 @@ func main() {
 		Principais: []string{"5-Bife com batatas", "6-Peixe grelhado com arroz", "7-Lasanha de espinafre e ricota", "8-Frango ao curry com arroz basmati"},
 		Sobremesas: []string{"9-Sorvete de baunilha", "10-Bolo de chocolate", "11-Pudim de leite", "12-Torta de maçã"},
 	}
-
+	//Tratando o erro de criação do arquivo Json
 	file, err := os.Create("chatbot-responsesweb1.json")
 	if err != nil {
 		panic(err)

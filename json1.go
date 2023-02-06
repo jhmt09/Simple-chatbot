@@ -5,7 +5,8 @@ import (
 	"os"
 )
 
-type //Escolhas struct {
+// Criando Struct
+type Escolhas struct {
 	Guacamole     []string `json:"Guacamole"`
 	AsasDeFrango  []string `json:"Asas de frango"`
 	SaladaCaesar  []string `json:"Salada caesar"`
@@ -35,7 +36,7 @@ func main() {
 		PudimLeite:    []string{"Pudim de leite"},
 		TortaMaca:     []string{"Torta de maçã"},
 	}
-
+	// Tratando o erro de criação do arquivo Json
 	file1, err := os.Create("chatbot-responses1.json")
 	if err != nil {
 		panic(err)
