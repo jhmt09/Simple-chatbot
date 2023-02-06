@@ -1,0 +1,7 @@
+A análise assintótica deste código é a seguinte:
+
+Abrir e decodificar o arquivo JSON tem complexidade O(1) (operações constantes)
+O primeiro loop de leitura de input tem complexidade O(n), onde n é o número de vezes que o usuário digita "next" antes de sair do loop
+O segundo loop de leitura de input e impressão do cardápio tem complexidade O(m), onde m é o número de vezes que o usuário digita "c" antes de sair do loop.
+A impressão de cada item do cardápio tem complexidade O(1) (operações constantes)
+Portanto, a complexidade total deste código é O(n + m)
