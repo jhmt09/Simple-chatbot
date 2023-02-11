@@ -159,6 +159,7 @@ func main() {
 		case x == 12:
 			for _, escolha12 := range escolhas.TortaMaca {
 				fmt.Println("Seu pedido foi", escolha12)
+				
 			}
 		}
 	}
